@@ -1,0 +1,28 @@
+.col {
+  background-color: rgba(246, 36, 89, 0.8);
+}
+.color {
+  color: rgba(246, 36, 89, 0.8);
+}
+
+.name {
+  margin-top: 50px;
+  font-family: 'Lobster', cursive;
+  color: white;
+}
+
+.quote {
+  background-color: #ECF0F1;
+  margin: 0 auto;
+  margin-top: 12%;
+  padding: 40px;
+  border-radius: 4px;
+}
+
+.socialmedia a {
+  background-color: rgba(246, 36, 89, 0.8);
+}
+
+a {
+  color: white;
+}
