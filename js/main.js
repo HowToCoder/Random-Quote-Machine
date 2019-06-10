@@ -3,15 +3,16 @@ $(document).ready(function(){
     getRandomQuote();
   });
   function getRandomQuote(){
-    var color=['#F64747','#663399','#4183D7','#22313F','#9A12B3','#03A678']; /* array of hex color */
-    var index=color[Math.floor(Math.random()*color.length)]; /* random color from color array */
+    let color=['#F64747','#663399','#4183D7','#22313F','#9A12B3','#03A678']; /* array of hex color */
+    let index=color[Math.floor(Math.random()*color.length)]; /* random color from color array */
     $.ajax({
-      url: 'https://talaikis.com/api/quotes/random/',
+      url: 'https://quota.glitch.me/random', /* make a request to this endpoint works */
       type: 'GET',
       dataType: 'json',
       success: function(data) {
-  	    var quote=data.quote;
-  	    var author=data.author;
+        // alert(`${data.quoteText} -${data.quoteAuthor}`);
+  	    let quote=data.quoteText;
+  	    let author=data.quoteAuthor;
   			$('.quote #data').html(quote);
   			$('.quote h4').html("-"+author);
     		$('body').css('background-color', index);
